@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Կրիպտո Նորություններ | CryptoArmenia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #00f2ff;
+            --secondary: #7000ff;
+            --dark: #080a0f;
+            --glass: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            background: var(--dark);
+            color: #fff;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background: radial-gradient(circle at 50% 50%, #1a1f35 0%, #080a0f 100%);
+            min-height: 100vh;
+        }
+
+        /* --- GOOGLE TRANSLATE STYLING --- */
+        #google_translate_element {
+            padding: 10px;
+            text-align: right;
+            background: rgba(0, 242, 255, 0.05);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header-section h1 {
+            font-size: 2.2rem;
+            background: linear-gradient(to right, var(--primary), #00ff9d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* News Container */
+        .news-box {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 10px;
+            min-height: 800px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--primary);
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        /* Այս կոդը թաքցնում է Google-ի վերևի նավիգացիոն տողը */
+        .goog-te-banner-frame.skiptranslate { display: none !important; }
+        body { top: 0px !important; }
+    </style>
+</head>
+<body>
+
+    <div id="google_translate_element"></div>
+
+    <div class="container">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Վերադառնալ Գլխավոր</a>
+        
+        <div class="header-section">
+            <h1>Կրիպտոաշխարհի Իրադարձությունները</h1>
+            <p>Օգտագործեք վերևի թարգմանիչը՝ նորությունները հայերենով կարդալու համար</p>
+        </div>
+
+        <div class="news-box">
+            <a href="https://cryptopanic.com/" 
+               target="_blank" 
+               data-news_feed="all" 
+               data-font_family="sans-serif" 
+               data-bg_color="#080A0F" 
+               data-text_color="#FFFFFF" 
+               data-link_color="#00F2FF" 
+               data-header_bg_color="#1A1F35" 
+               class="CryptoPanicWidget">
+               Կրիպտո Լուրեր
+            </a>
+            <script src="https://www.cryptopanic.com/static/widgets/dist/js/dist.js"></script>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en', 
+                includedLanguages: 'hy', 
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
